@@ -1,12 +1,8 @@
-function Button () {
-
-  const handleClick = () => {
-    window.alert('Coucou, bien joué')
-  }
+function Button ({ text, onClick }) {
 
   return (
-    <button onClick={handleClick}>
-      Click Me !
+    <button onClick={onClick}>
+      { text }
     </button>
   )
 }
